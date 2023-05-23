@@ -1,0 +1,15 @@
+@use "icons";
+
+.icon {
+	display: inline-flex;
+	border: none;
+	user-select: none;
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	flex-shrink: 0;
+	transition: opacity var(--transition-duration) ease;
+	width: var(--size, 24px);
+	height: var(--size, 24px);
+	background-color: var(--color, #000);
+}

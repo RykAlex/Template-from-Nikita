@@ -1,0 +1,36 @@
+{
+	"name": "project-template",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"dev": "node ./node_modules/gulp/bin/gulp.js --ram --fwatch",
+		"build": "node ./node_modules/gulp/bin/gulp.js",
+		"build_min": "node ./node_modules/gulp/bin/gulp.js --min",
+		"build_watch": "node ./node_modules/gulp/bin/gulp.js --fwatch",
+		"build_watch_min": "node ./node_modules/gulp/bin/gulp.js --fwatch --min",
+		"imagemin": "node ./node_modules/gulp/bin/gulp.js imagemin",
+		"ttfToWoff": "node ./node_modules/gulp/bin/gulp.js ttfToWoff",
+		"init": "npm i && node ./node_modules/gulp/bin/gulp.js cleanInitials"
+	},
+	"devDependencies": {
+		"browser-sync": "^2.29.3",
+		"ejs": "^3.1.9",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-esbuild": "^0.11.1",
+		"gulp-imagemin": "^8.0.0",
+		"gulp-mem": "^0.1.3",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-stacksvg": "^2.0.1",
+		"imagemin-webp": "^8.0.0",
+		"sass": "^1.62.0",
+		"ttf2woff2": "^5.0.0"
+	},
+	"dependencies": {
+		"@splidejs/splide": "^4.1.4",
+		"cleave.js": "^1.6.0",
+		"fslightbox": "^3.4.1"
+	}
+}
